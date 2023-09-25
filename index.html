@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+
+    <!-- Box Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+
+
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <h1><span>G</span>U</h1>
+    <img class="ham" src="./hamburgerMenu.png" alt="Broken Image" />
+    <nav class="navbar">
+      <ul class="ul nav-links">
+        <li>
+          <a
+            class="resume"
+            href="#"
+            >Resume</a>
+        </li>
+        <li>
+          <a href="https://github.com/GourikaUdasi23" target="_blank"
+            ><i class='bx bxl-github' id="git"></i></a>
+        </li>
+        <li>
+          <a href="#" target="blank">
+            <i class='bx bxl-linkedin-square' id="lin"></i>
+          </a>
+        </li>
+      </ul>
+      <img class="closeBtn" src="./closeMenu.png" alt="Broken Image" />
+    </nav>
+    <header>
+      <div class="content">
+        <div class="text">
+          <h2>
+            I make <span>playful</span><br />
+            Experiences
+          </h2>
+        </div>
+        <div class="image">
+          <img class="img1" src="./birdlogo.jpg" alt="Broken Image" />
+        </div>
+      </div>
+      <div class="myself">
+        <p>Gourika Udasi / <span>Student</span></p>
+      </div>
+      <div class="prodown">
+          <div class="pro">
+              <h2>Projects</h2>
+          </div>
+      <div>
+          <i class='bx bxs-chevron-down' id="down"></i>
+      </div>
+      </div>
+    </header>
+
+    <script>
+      const ham = document.querySelector(".ham");
+      const navbar = document.querySelector(".navbar");
+      const closeBtn = document.querySelector(".closeBtn");
+
+      ham.addEventListener("click", () => {
+        navbar.style.top = "0";
+        ham.style.display = "none";
+      });
+
+      closeBtn.addEventListener("click", () => {
+        navbar.className = "navbar";
+        ham.style.display = "block";
+        navbar.style.top = "-100%";
+      });
+    </script>
+  </body>
+</html>
